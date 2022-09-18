@@ -1,0 +1,41 @@
+<div class="type-info">
+  <div class="type-info_c1">
+    <h1 class="type-info_c1_type-name-title">{{this.typeName | titlecase}}</h1>
+    <table class="type-info_c1_styled-table">
+      <tbody>
+        <tr>
+          <th>Type Id</th>
+          <td>#{{this.typeId}}</td>
+        </tr>
+        <tr>
+          <th>Generation</th>
+          <td>{{this.typeGeneration | pkname | titlecase}}</td>
+        </tr>
+        <tr>
+          <th>Move Damage Class</th>
+          <td>{{this.typeMoveDmgClass | titlecase}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <app-multipliers
+    [doubleDamageFrom] = "typeDoubleDmgFrom"
+    [doubleDamageTo] = "typeDoubleDmgTo"
+    [halfDamageFrom] = "typeHalfDmgFrom"
+    [halfDamageTo] = "typeHalfDmgTo"
+    [noDamageFrom] = "typeNoDmgFrom"
+    [noDamageTo] = "typeNoDmgTo"
+  ></app-multipliers>
+  </div>
+  <div class="type-info_c2">
+    <a>
+      <mat-icon
+        svgIcon={{this.type}}
+        aria-hidden="false"
+        class="type-info_c2_icon"
+        style="--type-color: {{this.getTypeColor(this.type)}}">
+      </mat-icon>
+    </a>
+    <span class="type-info_c2_jp-name">{{this.typeJpName}}</span>
+  </div>
+</div>

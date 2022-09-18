@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: space-between;
+
+  &_logo {
+    font-family: "Josefin Sans", sans-serif !important;
+    font-size: 3.26rem;
+    line-height: 3rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    user-select: none;
+    text-shadow: rgb(0 0 0) -.4375rem -1px 0px, rgb(0 0 0) 1px -1px 0px, rgb(0 0 0) -1px 1px 0px, rgb(0 0 0) 1px 1px 0px;
+
+    cursor: pointer;
+  }
+}

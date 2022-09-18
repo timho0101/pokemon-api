@@ -1,0 +1,90 @@
+.type-info{
+  display: flex;
+  flex-flow: row nowrap;
+
+  gap: 1rem;
+  
+  
+  &_c1{
+    display: flex;
+    flex-flow: column nowrap;
+  
+    gap: 1rem;
+
+    &_styled-table{
+      font-size: .875rem;
+      line-height: 1.2rem;
+      word-break: keep-all;
+      border-collapse: collapse;
+    }
+
+    &_styled-table tbody tr th {
+      text-align: left;
+      width: 12rem;
+    }
+    &_styled-table tbody tr td {
+      padding: .375rem 1rem;
+      font-weight: bold;
+      font-size: 1rem;
+      white-space: pre-line;
+      height: 2.5rem;
+    }
+    &_styled-table tbody tr:not(:last-child){
+      width: 100%;
+      border-bottom: 1px solid rgb(236, 236, 236);
+    }
+
+    &_type-name-title{
+      margin: 0;
+      font-size: 5rem;
+      font-weight: bold;
+      line-height: 5rem;
+    }
+
+    flex: 1 1 30%
+  }
+
+  &_c2 {
+    position: relative;
+
+    &_icon {
+      width: auto;
+      height: 10rem;
+      color: var(--type-color);
+      stroke: black;
+      stroke-width: 5;
+      position: absolute;
+      animation: 3s ease-in-out 0s infinite normal none running matIcon;
+
+      filter: var(--type-drop-shadow-color);
+
+      left: 15rem; // 12
+      top: 9rem; // 5
+    }
+
+    &_jp-name{
+      position: absolute;
+      // top: 0;
+      right: 2rem;
+      // z-index: 0;
+      line-height: 1;
+      font-size: 3rem;
+      font-weight: bold;
+      width: 1rem;
+    }
+    flex: 1 1 50%
+  }
+
+}
+
+@keyframes matIcon {
+  0% {
+    transform: translateY(-.3125rem);
+  }
+  50% {
+    transform: translateY(.3125rem);
+  }
+  100% {
+    transform: translateY(-.3125rem);
+  }
+}

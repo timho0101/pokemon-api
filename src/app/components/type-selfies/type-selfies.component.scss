@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+
+  // justify-content: space-between;
+  width: 90%;
+  gap: 5rem;
+}
+
+// mat-card-title{
+//   display: flex;
+
+//   justify-content: flex-start;
+// }
+
+a{
+  flex: 1 1 auto;
+  height: 0;
+  width: 0;
+  // cursor: pointer;
+}
+.img{
+  height: auto;
+  width: auto;
+}
+img{
+  height: 10rem;
+  width: 10rem;
+}

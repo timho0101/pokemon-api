@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+
+  margin: 0 auto;
+  width: 100%;
+  -webkit-box-flex: 1;
+  flex: 1;
+  // position: relative;
+
+  &_main {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    width: inherit;
+
+    &_s2 {
+      display: flex;
+      flex-flow: column nowrap;
+
+      &_nav {
+        display: flex;
+        flex-flow: row wrap;
+        width: inherit;
+        
+        margin-bottom: 2rem;
+        &_pokemon{
+          display: flex;
+          justify-content: center;
+          flex: 1 1 50%;
+        }
+
+        &_pokemon button{
+          height: 2.8rem;
+          background-color: black;
+          color: white;
+          border: 2px solid black;
+        }
+        
+        &_pokemon button:hover, button:focus {
+          background-color: white;
+          color: black;
+          filter: drop-shadow(0 0 2px black);
+        }
+        
+        &_moves{
+          display: flex;
+          justify-content: center;
+          flex: 1 1 50%;
+        }
+
+
+        &_moves button{
+          height: 2.8rem;
+          background-color: black;
+          color: white;
+          border: 2px solid black;
+        }
+
+        &_moves button:hover, button:focus {
+          background-color: white;
+          color: black;
+          filter: drop-shadow(0 0 2px black);
+        }
+      }
+    }
+  }
+}
+
+app-header {
+  -webkit-box-flex: 1;
+  flex: 1;
+  margin: 2rem auto;
+  width: inherit;
+  max-width: 80rem;
+}
+
+app-footer{
+  flex: 1;
+  background-color: black;
+  // position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 2rem;
+}

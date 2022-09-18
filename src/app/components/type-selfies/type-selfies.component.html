@@ -1,0 +1,11 @@
+<div class="container">
+  <a *ngFor="let pokemonType of this.pokemonTypes">
+    <!-- <mat-card-title>{{pokemonType.pkName| pkname | titlecase}}</mat-card-title> -->
+    <!-- <mat-card-content>
+      <span>#{{pokemonType.pkId}}</span>
+    </mat-card-content> -->
+    <div class="img">
+      <img mat-card-image src="{{pokemonType.pkImg}}">
+    </div>
+  </a>
+</div>

@@ -1,0 +1,37 @@
+<app-loader></app-loader>
+<div class="container">
+  <app-header></app-header>
+  <main>
+    <div style="width: 100%;">
+      <button mat-button (click)="goToMain()" style="background-color: lightgreen; margin-right: 5px;">Main</button>
+      <button mat-button (click)="goToPlayGround()" style="background-color: lightblue;">Play Ground</button>
+    </div>
+    <app-ms1-section
+      [pkName] = "pkName"
+      [pkType] = "pkType"
+      [pkTextEntry] = "pkTextEntry"
+      [pkId] = "pkId"
+      [pkWeight] = "pkWeight"
+      [pkHeight] = "pkHeight"
+      [pkAbilities_index] = "pkAbilities_index"
+      [pkJaName] = "pkJaName"
+      [pkImg] = "pkImg"
+      [pkColor] = "pkColor"
+      [pkShape] = "pkShape"
+      [pkAbilities] = "pkAbilities"
+    ></app-ms1-section>
+    <app-ms2-section
+      [doubleDamageFrom] = "doubleDamageFrom"
+      [doubleDamageTo] = "doubleDamageTo"
+      [halfDamageFrom] = "halfDamageFrom"
+      [halfDamageTo] = "halfDamageTo"
+      [noDamageFrom] = "noDamageFrom"
+      [noDamageTo] = "noDamageTo"
+      [pkType] = "pkType"
+      [stats] = "stats"
+    ></app-ms2-section>
+  </main>
+  <app-footer></app-footer>
+</div>
+
+

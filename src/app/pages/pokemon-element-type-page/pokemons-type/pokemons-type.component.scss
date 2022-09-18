@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+
+  gap: 1rem;
+  &_card{
+    display: flex;
+    flex-flow: column nowrap;
+
+    max-width: 9rem;
+    width: 9rem;
+    background-color: black;
+    color: white;
+
+    cursor: pointer;
+
+    gap: 1rem;
+
+    &_title {
+      text-align: center;
+      font-family: inherit;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    &_img {
+      width: 7rem;
+      height: 7rem;
+      margin: 0;
+      padding: .5rem;
+    }
+  }
+}

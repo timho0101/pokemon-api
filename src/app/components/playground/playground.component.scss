@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5px;
+  margin: auto 10rem;
+  
+  height: 100vh;
+
+  .item-1 {
+    flex: 1 0 20%;
+    background-color: lightblue;
+    text-align: center;
+  }
+  .item-2 {
+    flex: 1 0 25%;
+    background-color: lightblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item-3 {
+    flex: 1 0 30%;
+    background-color: lightblue;
+  }
+  .item-4 {
+    flex: 1 0 35%;
+    background-color: lightblue;
+  }
+  .item-5 {
+    flex: 1 0 40%;
+    background-color: lightblue;
+    margin: 0;
+  }
+  
+  
+}
+a {
+  background-color: lightgreen;
+  color: lightgreen;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 2px solid lightgreen;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Roboto';
+  letter-spacing: 1px;
+
+  animation: 2s pulse ease infinite;
+
+  
+}
+
+// love hate = link --- visited --- hover active --- ---
+
+a:hover, a:focus, a:active, a:visited {
+  background-color: white;
+  color: black;
+  filter: drop-shadow(0 0 3px black);
+}
+
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(5rem);
+    background-color: white;
+    color: black;
+    filter: drop-shadow(0 0 3px black);
+  }
+}
+
+// // small screen
+// @media only screen and (max-width: 600px){
+//   .container {
+//     background-color: lightcoral
+//   }
+// }
+// // large screen
+// @media only screen and (min-width: 600px){
+//   .container {
+//     background-color: lightseagreen
+//   }
+// }
+

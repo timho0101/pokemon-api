@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  max-width: 80rem;
+  width: 100%;
+  margin: 0px auto;
+
+  height: 3.5rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.create-by {
+  display: flex;
+  flex-flow: row nowrap;
+
+  margin: auto 0;
+  gap: .5rem;
+
+  color: white;
+}
+
+.github {
+  display: flex;
+  flex-flow: row nowrap;
+
+  margin: auto 0;
+  gap: .5rem;
+
+  position: relative;
+
+  color: white;
+}
+
+.icon {
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  top: 2px;
+  left: 3rem;
+}
+
+img {
+  width: 4.5rem;
+  height: 2.1rem;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+.inspired {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+@keyframes pulse {
+  0% {
+    color: black
+  }
+
+  100% {
+    color: white;
+  }
+}

@@ -1,0 +1,42 @@
+<div class="pkinfo">
+  <p class="pkinfo_pkname">{{this.pkName | pkname | titlecase}}</p>
+  <div class="pkinfo_pktype">
+    <a *ngFor="let pktpName of this.pkType" class="pkinfo_pktype_elements" [ngStyle]="{'background-color': getBGColor(pktpName)}" (click)="this.goToType(pktpName)">
+      <mat-icon class="pkinfo_pktype_elements_icon" svgIcon={{pktpName}} aria-hidden="false"></mat-icon>
+      <span class="pkinfo_pktype_elements_typename">{{pktpName | titlecase}}</span>
+    </a>
+  </div>
+  <p class="pkinfo_bio">
+    {{this.pkTextEntry}}
+  </p>
+  <table class="pkinfo_styled-table">
+    <tbody>
+      <tr>
+        <th>National №</th>
+        <td>#{{this.pkId}}</td>
+      </tr>
+      <tr>
+        <th>Weight</th>
+        <td>{{this.pkWeight}}</td>
+      </tr>
+      <tr>
+        <th>Height</th>
+        <td>{{this.pkHeight}}</td>
+      </tr>
+      <tr>
+        <th>Abilities</th>
+        <td>
+          <span *ngFor="let index of this.pkAbilities_index">{{index+1}}. {{this.pkAbilities[index] | pkname | titlecase}}<br></span>
+        </td>
+      </tr>
+      <tr>
+        <th>Shape</th>
+        <td>{{this.pkShape | titlecase}}</td>
+      </tr>
+      <tr>
+        <th>Color</th>
+        <td>{{this.pkColor | titlecase}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

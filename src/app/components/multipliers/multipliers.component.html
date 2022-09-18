@@ -1,0 +1,20 @@
+<div class="damage-multipliers">
+  <div class="damage-multipliers_header">
+    <h2 class="damage-multipliers_header_title">{{this.headerTitle}}</h2>
+  </div>
+  <table class="damage-multipliers_styled-table">
+    <tbody>
+      <tr *ngFor="let datas of this.tableData; let i = index" [hidden]="this.datas.length === 0">
+        <th>{{this.tableHead[i]}}</th>
+        <td><a 
+            class="damage-multipliers_styled-table_type-icon"
+            *ngFor="let data of datas"
+            [ngStyle]="{'background-color': getBGColor(data)}"
+            (click)="this.goToType(data)">
+            <mat-icon svgIcon={{data}} aria-hidden="false"></mat-icon>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

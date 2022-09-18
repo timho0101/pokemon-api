@@ -1,0 +1,32 @@
+<div class="container">
+  <table class="container_table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Category</th>
+        <th>Power</th>
+        <th>PP</th>
+        <th>Accuracy</th>
+        <th>Generation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pkmove of this.pkMoves">
+        <td>{{pkmove.mName | pkname | titlecase}}</td>
+        <td>
+          <a
+            class="icon"
+            [ngStyle]="{'background-color': this.getTypeColor(pkmove.mType)}">
+            <mat-icon svgIcon={{pkmove.mType}} aria-hidden="false"></mat-icon>
+          </a>
+        </td>
+        <td>{{pkmove.mCategory | titlecase}}</td>
+        <td>{{pkmove.mPower}}</td>
+        <td>{{pkmove.mPP}}</td>
+        <td>{{pkmove.mAccuracy}}</td>
+        <td>{{pkmove.mGeneration | pkname | titlecase}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

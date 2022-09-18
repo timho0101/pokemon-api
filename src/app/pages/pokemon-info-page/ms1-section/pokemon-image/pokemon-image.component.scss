@@ -1,0 +1,32 @@
+.pkSprites {
+  position: relative;
+  right: 5rem;
+  bottom: -3rem;
+
+  &_img {
+    width: 100%;
+    height: auto;
+    animation: 3s ease-in-out 0s infinite normal none running img;
+    
+    &_size {
+      height: 25rem;
+      width: 25rem;
+    }
+  }
+
+  &_ja {
+    position: absolute;
+    top: 0;
+    right: -5rem;
+    z-index: 0;
+    word-break: break-all;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    user-select: none;
+    width: 1em;
+    color: black;
+  }
+}

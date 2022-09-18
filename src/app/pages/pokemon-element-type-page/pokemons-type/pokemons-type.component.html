@@ -1,0 +1,6 @@
+<div class="container">
+  <mat-card class="container_card" *ngFor="let pokemonType of this.pokemonTypes" (click)="this.getPokemon(pokemonType.pkName)">
+    <mat-card-title class="container_card_title">{{pokemonType.pkName| pkname | titlecase}}</mat-card-title>
+    <img class="container_card_img" mat-card-image src="{{pokemonType.pkImg}}">
+  </mat-card>
+</div>

@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  font-family: Quicksand, sans-serif;
+  margin-bottom: 1rem;
+  gap: 2rem;
+}
+
+app-base-stats {
+  width: 60%;
+}
+
+app-multipliers {
+  width: 40%;
+}
