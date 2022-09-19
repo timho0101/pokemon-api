@@ -39,7 +39,7 @@ export class IconsService {
   }
 
   private githubIcon(gIcon:string): any {
-    return this.iconRegistry.addSvgIcon(`${gIcon}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/github-icon.svg'));
+    return this.iconRegistry.addSvgIcon(`${gIcon}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/github-icon.svg'));
   }
   private Bug(bug:string): any {
     return this.iconRegistry.addSvgIcon(`${bug}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/bug.svg'));
@@ -48,52 +48,52 @@ export class IconsService {
     return this.iconRegistry.addSvgIcon(`${dark}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/dark.svg'));
   }
   private Dragon(dragon:string): any {
-    return this.iconRegistry.addSvgIcon(`${dragon}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/dragon.svg'));
+    return this.iconRegistry.addSvgIcon(`${dragon}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/dragon.svg'));
   }
   private Electric(electric:string): any {
-    return this.iconRegistry.addSvgIcon(`${electric}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/electric.svg'));
+    return this.iconRegistry.addSvgIcon(`${electric}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/electric.svg'));
   }
   private Fairy(fairy:string): any {
-    return this.iconRegistry.addSvgIcon(`${fairy}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/fairy.svg'));
+    return this.iconRegistry.addSvgIcon(`${fairy}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/fairy.svg'));
   }
   private Fighting(fighting:string): any {
-    return this.iconRegistry.addSvgIcon(`${fighting}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/fighting.svg'));
+    return this.iconRegistry.addSvgIcon(`${fighting}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/fighting.svg'));
   }
   private Fire(fire:string): any {
-    return this.iconRegistry.addSvgIcon(`${fire}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/fire.svg'));
+    return this.iconRegistry.addSvgIcon(`${fire}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/fire.svg'));
   }
   private Flying(flying:string): any {
-    return this.iconRegistry.addSvgIcon(`${flying}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/flying.svg'));
+    return this.iconRegistry.addSvgIcon(`${flying}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/flying.svg'));
   }
   private Ghost(ghost:string): any {
-    return this.iconRegistry.addSvgIcon(`${ghost}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/ghost.svg'));
+    return this.iconRegistry.addSvgIcon(`${ghost}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/ghost.svg'));
   }
   private Grass(grass:string): any {
-    return this.iconRegistry.addSvgIcon(`${grass}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/grass.svg'));
+    return this.iconRegistry.addSvgIcon(`${grass}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/grass.svg'));
   }
   private Ground(ground:string): any {
-    return this.iconRegistry.addSvgIcon(`${ground}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/ground.svg'));
+    return this.iconRegistry.addSvgIcon(`${ground}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/ground.svg'));
   }
   private Ice(ice:string): any {
-    return this.iconRegistry.addSvgIcon(`${ice}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/ice.svg'));
+    return this.iconRegistry.addSvgIcon(`${ice}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/ice.svg'));
   }
   private Normal(normal:string): any {
-    return this.iconRegistry.addSvgIcon(`${normal}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/normal.svg'));
+    return this.iconRegistry.addSvgIcon(`${normal}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/normal.svg'));
   }
   private Poison(poison:string): any {
-    return this.iconRegistry.addSvgIcon(`${poison}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/poison.svg'));
+    return this.iconRegistry.addSvgIcon(`${poison}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/poison.svg'));
   }
   private Psychic(psychic:string): any {
-    return this.iconRegistry.addSvgIcon(`${psychic}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/psychic.svg'));
+    return this.iconRegistry.addSvgIcon(`${psychic}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/psychic.svg'));
   }
   private Rock(rock:string): any {
-    return this.iconRegistry.addSvgIcon(`${rock}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/rock.svg'));
+    return this.iconRegistry.addSvgIcon(`${rock}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/rock.svg'));
   }
   private Steel(steel:string): any {
-    return this.iconRegistry.addSvgIcon(`${steel}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/steel.svg'));
+    return this.iconRegistry.addSvgIcon(`${steel}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/steel.svg'));
   }
   private Water(water:string): any {
-    return this.iconRegistry.addSvgIcon(`${water}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/water.svg'));
+    return this.iconRegistry.addSvgIcon(`${water}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/water.svg'));
   }
 
 }
