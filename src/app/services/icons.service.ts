@@ -42,10 +42,10 @@ export class IconsService {
     return this.iconRegistry.addSvgIcon(`${gIcon}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/github-icon.svg'));
   }
   private Bug(bug:string): any {
-    return this.iconRegistry.addSvgIcon(`${bug}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/bug.svg'));
+    return this.iconRegistry.addSvgIcon(`${bug}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/bug.svg'));
   }
   private Dark(dark:string): any {
-    return this.iconRegistry.addSvgIcon(`${dark}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/dark.svg'));
+    return this.iconRegistry.addSvgIcon(`${dark}`, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/dark.svg'));
   }
   private Dragon(dragon:string): any {
     return this.iconRegistry.addSvgIcon(`${dragon}`, this.sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/dragon.svg'));
