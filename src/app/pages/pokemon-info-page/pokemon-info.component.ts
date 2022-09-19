@@ -157,15 +157,6 @@ export class PokemonInfoComponent implements OnInit, AfterContentChecked {
       })
     })
   }
-
-  public goToPlayGround() {
-    this.router.navigateByUrl('playground');
-  }
-
-  public goToMain() {
-    this.router.navigateByUrl('');
-  }
-
   
 
 }

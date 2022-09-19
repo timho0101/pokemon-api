@@ -24,7 +24,6 @@ import { PokemonInfoComponent } from './pages/pokemon-info-page/pokemon-info.com
 import {MatIconRegistry} from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { PknamePipe } from './pipes/pkname.pipe';
-import { PlaygroundComponent } from './components/playground/playground.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { MaxProgresssBarValue } from './pipes/maxProgressBarValue.pipe';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
@@ -59,7 +58,6 @@ import { LoaderComponent } from './components/loader/loader.component'
     MainComponent,
     PokemonInfoComponent,
     PknamePipe,
-    PlaygroundComponent,
     MaxProgresssBarValue,
     Ms1SectionComponent,
     Ms2SectionComponent,
