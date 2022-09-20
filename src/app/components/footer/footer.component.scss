@@ -35,6 +35,14 @@ h1,h2,h3,h4,h5,h6 {
   position: relative;
 
   color: white;
+
+  & a {
+    color: white;
+    text-decoration: none;
+  }
+  & a:hover {
+    border-bottom: 1px solid white;
+  }
 }
 
 .icon {
