@@ -2,6 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { PokemonService } from '../../services/pokemon.service';
 import { Router } from '@angular/router';
 
+interface Options {
+  name: string
+  img: string
+  id: number
+}
+
 @Component({
   selector: 'app-search-pokemon',
   templateUrl: './search-pokemon.component.html',
@@ -10,9 +16,9 @@ import { Router } from '@angular/router';
 export class SearchPokemonComponent implements OnInit {
 
   public searchTerm: string = '';
-  public filterdOptions: any[] = [];
+  public filterdOptions: Options[] = [];
 
-  public options: any[] = [];
+  public options: Options[] = [];
 
   public pkValue: boolean = false;
 
