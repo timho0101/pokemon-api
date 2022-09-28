@@ -18,7 +18,6 @@ import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
-import { PokemonComponent } from './components/pokemon/pokemon.component';
 import { MainComponent } from './components/main/main.component';
 import { PokemonInfoComponent } from './pages/pokemon-info-page/pokemon-info.component';
 import {MatIconRegistry} from '@angular/material/icon';
@@ -54,7 +53,6 @@ import { LoaderComponent } from './components/loader/loader.component'
 @NgModule({
   declarations: [
     AppComponent,
-    PokemonComponent,
     MainComponent,
     PokemonInfoComponent,
     PknamePipe,
