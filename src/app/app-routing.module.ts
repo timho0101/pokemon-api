@@ -6,7 +6,6 @@ import { PokemonIntroPageComponent } from './pages/pokemon-intro-page/pokemon-in
 
 const routes: Routes = [
   { path: '', redirectTo: '', pathMatch: 'full', component: PokemonIntroPageComponent},
-  // { path: 'main', component: PokemonIntroPageComponent},
   { path: 'pokemon/:name', component:  PokemonInfoComponent},
   { path: 'type/:type', component:  TypesComponent}
 ];
