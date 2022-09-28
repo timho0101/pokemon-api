@@ -3,6 +3,11 @@ import { IconsService } from 'src/app/services/icons.service';
 import { PokemonService } from 'src/app/services/pokemon.service';
 import { TypesColorService } from 'src/app/services/typesColor.service';
 
+interface DoubleDamageFrom {
+  doubleDamageFrom: string
+}
+
+
 @Component({
   selector: 'app-type-info',
   templateUrl: './type-info.component.html',
@@ -23,7 +28,7 @@ export class TypeInfoComponent implements OnInit {
   public typeGeneration: string = '';
   public typeMoveDmgClass: string = '';
 
-  public typeDoubleDmgFrom: string[] = [];
+  public typeDoubleDmgFrom: DoubleDamageFrom[] = [];
   public typeDoubleDmgTo: string[] = [];
   public typeHalfDmgFrom: string[]= [];
   public typeHalfDmgTo: string[] = [];

@@ -4,6 +4,10 @@ import { Router, ActivatedRoute} from '@angular/router';
 import { IconsService } from '../../services/icons.service';
 import { Title } from '@angular/platform-browser';
 
+interface DoubleDamageFrom {
+  doubleDamageFrom: string
+}
+
 @Component({
   selector: 'app-pokemon-info',
   templateUrl: './pokemon-info.component.html',
@@ -25,7 +29,7 @@ export class PokemonInfoComponent implements OnInit, AfterContentChecked {
   public stats: number[] = []
   public pkAbilities_index: number[] = [];
 
-  public doubleDamageFrom: string[] = [];
+  public doubleDamageFrom: DoubleDamageFrom[] = [];
   public doubleDamageTo: string[] = [];
   public halfDamageFrom: string[] = [];
   public halfDamageTo: string[] = [];

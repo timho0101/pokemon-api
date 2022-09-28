@@ -2,20 +2,24 @@ import { Component,Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TypesColorService } from 'src/app/services/typesColor.service';
 
+interface DoubleDamageFrom {
+  doubleDamageFrom: string
+}
+
 @Component({
   selector: 'app-multipliers',
   templateUrl: './multipliers.component.html',
   styleUrls: ['./multipliers.component.scss']
 })
 export class MultipliersComponent implements OnInit {
-  @Input() doubleDamageFrom: string[] = [];
+  @Input() doubleDamageFrom: DoubleDamageFrom[] = [];
   @Input() doubleDamageTo: string[] = [];
   @Input() halfDamageFrom: string[] = [];
   @Input() halfDamageTo: string[] = [];
   @Input() noDamageFrom: string[] = [];
   @Input() noDamageTo: string[] = [];
 
-  public tableHead: string[] = [
+  public tableHeader: string[] = [
     'Take Double Damage From',
     'Deal Double Damage To',
     'Take Half Damage From',

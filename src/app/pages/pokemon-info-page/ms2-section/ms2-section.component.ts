@@ -2,13 +2,17 @@ import { Component,Input, OnInit, ViewChild } from '@angular/core';
 
 import { TypesColorService } from 'src/app/services/typesColor.service';
 
+interface DoubleDamageFrom {
+  doubleDamageFrom: string
+}
+
 @Component({
   selector: 'app-ms2-section',
   templateUrl: './ms2-section.component.html',
   styleUrls: ['./ms2-section.component.scss']
 })
 export class Ms2SectionComponent implements OnInit {
-  @Input() doubleDamageFrom: string[] = [];
+  @Input() doubleDamageFrom: DoubleDamageFrom[] = [];
   @Input() doubleDamageTo: string[] = [];
   @Input() halfDamageFrom: string[] = [];
   @Input() halfDamageTo: string[] = [];
