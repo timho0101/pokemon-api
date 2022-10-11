@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterContentChecked, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { PokemonService } from '../../services/pokemon.service';
 import { Router, ActivatedRoute} from '@angular/router';
 import { IconsService } from '../../services/icons.service';
 import { Title } from '@angular/platform-browser';
+import { LoaderService } from 'src/app/services/loader.service';
+import { Subject } from 'rxjs';
 
 interface DoubleDamageFrom {
   doubleDamageFrom: string
@@ -13,7 +15,7 @@ interface DoubleDamageFrom {
   styleUrls: ['./pokemon-info.component.scss']
 })
 
-export class PokemonInfoComponent implements OnInit {
+export class PokemonInfoComponent implements OnInit, AfterContentChecked {
   public pkImg: string = ''
   public pkName: string = '';
   public pkType: string[] = [];
@@ -39,11 +41,15 @@ export class PokemonInfoComponent implements OnInit {
 
   public pkRouteName = this.activatedRoute.snapshot.params['name']
 
+  public isLoading: Subject<boolean> = this.loaderService.isLoading;
+
   constructor(
     private pokemonService: PokemonService,
     private icons: IconsService,
     private activatedRoute: ActivatedRoute,
-    private titleService: Title
+    private titleService: Title,
+    private loaderService: LoaderService,
+    private changeDetector: ChangeDetectorRef
   ) { 
   }
   
@@ -51,6 +57,11 @@ export class PokemonInfoComponent implements OnInit {
     this.icons.getIcons()
     this.fetchData(this.pkRouteName)
     this.titleService.setTitle(`PokeIndex - ${this.pokemonService.titleCase(this.pkRouteName)}`)
+  }
+
+  // fix: ExpressionChangedAfterItHasBeenCheckedError
+  ngAfterContentChecked(): void {
+    this.changeDetector.detectChanges();
   }
 
   public fetchData(pkName:string) {
