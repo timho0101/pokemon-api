@@ -1,7 +1,7 @@
-<div class="type-info">
-  <div class="type-info_c1">
-    <h1 class="type-info_c1_type-name-title">{{this.typeName | titlecase}}</h1>
-    <table class="type-info_c1_styled-table">
+<div class="container">
+  <div class="section1">
+    <h1 class="title">{{this.typeName | titlecase}}</h1>
+    <table>
       <tbody>
         <tr>
           <th>Type Id</th>
@@ -27,15 +27,15 @@
     [noDamageTo] = "typeNoDmgTo"
   ></app-multipliers>
   </div>
-  <div class="type-info_c2">
+  <div class="section2">
     <a>
       <mat-icon
         svgIcon={{this.type}}
         aria-hidden="false"
-        class="type-info_c2_icon"
+        class="icon"
         style="--type-color: {{this.getTypeColor(this.type)}}">
       </mat-icon>
     </a>
-    <span class="type-info_c2_jp-name">{{this.typeJpName}}</span>
+    <span class="jp-name">{{this.typeJpName}}</span>
   </div>
 </div>
