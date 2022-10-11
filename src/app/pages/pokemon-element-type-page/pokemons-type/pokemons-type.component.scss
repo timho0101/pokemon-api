@@ -1,29 +1,26 @@
 .container {
   display: flex;
   flex-flow: row wrap;
-
   gap: 1rem;
-  &_card{
+
+  .card{
     display: flex;
     flex-flow: column nowrap;
-
     max-width: 9rem;
     width: 9rem;
     background-color: black;
     color: white;
-
+    gap: 1rem;
     cursor: pointer;
 
-    gap: 1rem;
-
-    &_title {
+    .title {
       text-align: center;
       font-family: inherit;
       font-weight: bold;
       font-size: 1.2rem;
     }
 
-    &_img {
+    img {
       width: 7rem;
       height: 7rem;
       margin: 0;
