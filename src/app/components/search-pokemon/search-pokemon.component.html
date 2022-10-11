@@ -1,14 +1,14 @@
 <div class="container">
-  <label class="container_label" for="autocomplete">Search Pokemon</label>
-  <input class="container_input" type="text" placeholder="Search Pokemon" [(ngModel)]="searchTerm" (input) = "filterPokemons(searchTerm)">
+  <label for="autocomplete">Search Pokemon</label>
+  <input type="text" placeholder="Search Pokemon" [(ngModel)]="searchTerm" (input) = "filterPokemons(searchTerm)">
 
   <div class="dropdown">
-    <div class="dropdown_display" *ngFor="let options of filterdOptions" (click)="this.searchPokemon(options.name)">
-      <div class="dropdown_display_imgName">
+    <div class="display" *ngFor="let options of filterdOptions" (click)="this.searchPokemon(options.name)">
+      <div class="imgName">
         <img src="{{options.img}}">
-        <span class="dropdown_display_imgName_pkName">{{options.name | pkname | titlecase}}</span>
+        <span class="pkName">{{options.name | pkname | titlecase}}</span>
       </div>
-      <span class="dropdown_display_id">#{{options.id}}</span>
+      <span class="id">#{{options.id}}</span>
     </div>
   </div>  
 </div> 
