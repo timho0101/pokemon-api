@@ -5,7 +5,7 @@
   align-items: center;
   height: 100vh;
 
-  &_canvas{
+  .canvas{
     position: absolute;
     top: 0px;
     left: 0px;
@@ -16,26 +16,16 @@
     padding: 0px;
     overflow: hidden;
     background-color: white;
-
-    // animation: 
-    // stretch
-    // 2.5s
-    // ease-out
-    // 0s
-    // alternate
-    // infinite
-    // backwards
-    // running;
   }
   
-  &_main{
+  .main{
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
     z-index: 1;
     height: 20rem;
     
-    &_title{
+    .title{
       text-shadow: rgb(0 0 0) -2px -2px 0px, rgb(0 0 0) 2px -2px 0px, rgb(0 0 0) -2px 2px 0px, rgb(0 0 0) 2px 2px 0px;
       font-size: 11.5rem;
       font-family: "Josefin Sans", sans-serif !important;
@@ -47,11 +37,11 @@
     }
 
 
-    &_search{
+    .search{
       margin: 0 auto;
     }
     
-    &_random-button{
+    .random-button{
       margin: 0 auto;
       padding: 10px 20px;
       width: 15rem;
@@ -68,7 +58,7 @@
       
     }
     
-    &_random-button:hover {
+    .random-button:hover {
       background-color: white;
       color: black;
       
@@ -78,18 +68,5 @@
     }
     
     
-  }
-}
-// search width
-.container .container_main .container_main_search .container {
-  width: 35rem;
-} 
-
-@keyframes upDown {
-  0% {
-    transform: translateY(-.2rem);
-  }
-  100% {
-    transform: translateY(.5rem);
   }
 }
