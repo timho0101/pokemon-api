@@ -24,7 +24,6 @@ export class PokemonIntroPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.pokemonService.getPokemonById(this.getRandomInt(MAX_POKEMON)).subscribe(res => {
-      console.log(res)
       this.pkName = res.name
     })
   }

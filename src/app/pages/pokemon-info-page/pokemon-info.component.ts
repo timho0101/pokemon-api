@@ -57,6 +57,7 @@ export class PokemonInfoComponent implements OnInit, AfterContentChecked {
     this.icons.getIcons()
     this.fetchData(this.pkRouteName)
     this.titleService.setTitle(`PokeIndex - ${this.pokemonService.titleCase(this.pkRouteName)}`)
+
   }
 
   // fix: ExpressionChangedAfterItHasBeenCheckedError
