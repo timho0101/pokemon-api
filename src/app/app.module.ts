@@ -44,7 +44,6 @@ import { PokemonImageComponent } from './pages/pokemon-info-page/ms1-section/pok
 import { PokemonInfomationComponent } from './pages/pokemon-info-page/ms1-section/pokemon-infomation/pokemon-infomation.component';
 import { PokemonsMovesComponent } from './pages/pokemon-element-type-page/pokemons-moves/pokemons-moves.component';
 import { PokemonsTypeComponent } from './pages/pokemon-element-type-page/pokemons-type/pokemons-type.component';
-import { TypesModule } from './pages/pokemon-element-type-page/types.module';
 import { LoaderComponent } from './components/loader/loader.component'
 
 @NgModule({

@@ -6,7 +6,7 @@
   &_img {
     width: 100%;
     height: auto;
-    animation: 3s ease-in-out 0s infinite normal none running img;
+    animation: img 3s ease-in-out infinite;
     
     &_size {
       height: 25rem;
@@ -30,3 +30,16 @@
     color: black;
   }
 }
+
+@keyframes img {
+  0%{
+    transform: translatey(-.322rem);
+  }
+  50%{
+    transform: translatey(.322rem);
+  }
+  100%{
+    transform: translatey(-.322rem);
+  }
+}
+

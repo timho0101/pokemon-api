@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild,ChangeDetectorRef, AfterContentChecked } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PokemonService } from '../../services/pokemon.service';
 import { Router, ActivatedRoute} from '@angular/router';
 import { IconsService } from '../../services/icons.service';
@@ -7,14 +7,13 @@ import { Title } from '@angular/platform-browser';
 interface DoubleDamageFrom {
   doubleDamageFrom: string
 }
-
 @Component({
   selector: 'app-pokemon-info',
   templateUrl: './pokemon-info.component.html',
   styleUrls: ['./pokemon-info.component.scss']
 })
 
-export class PokemonInfoComponent implements OnInit, AfterContentChecked {
+export class PokemonInfoComponent implements OnInit {
   public pkImg: string = ''
   public pkName: string = '';
   public pkType: string[] = [];
@@ -43,10 +42,8 @@ export class PokemonInfoComponent implements OnInit, AfterContentChecked {
   constructor(
     private pokemonService: PokemonService,
     private icons: IconsService,
-    private router: Router,
     private activatedRoute: ActivatedRoute,
-    private titleService: Title,
-    private changeDetector: ChangeDetectorRef
+    private titleService: Title
   ) { 
   }
   
@@ -54,10 +51,6 @@ export class PokemonInfoComponent implements OnInit, AfterContentChecked {
     this.icons.getIcons()
     this.fetchData(this.pkRouteName)
     this.titleService.setTitle(`PokeIndex - ${this.pokemonService.titleCase(this.pkRouteName)}`)
-  }
-
-  ngAfterContentChecked(): void {
-    this.changeDetector.detectChanges();
   }
 
   public fetchData(pkName:string) {
