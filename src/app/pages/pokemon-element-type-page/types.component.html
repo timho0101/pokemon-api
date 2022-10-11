@@ -1,29 +1,25 @@
 <div class="container">
   <app-loader></app-loader>
   <app-header></app-header>
-  <div class="container_main">
-    <div class="container_main_s1">
-      <app-type-info
-        [type] = "this.type"
-      ></app-type-info>
-    </div>
-    <div class="container_main_s2">
-      <div class="container_main_s2_nav">
-        <div class="container_main_s2_nav_pokemon">
+  <div class="main">
+    <app-type-info [type] = "this.type"></app-type-info>
+    <section>
+      <div class="nav">
+        <div class="pokemon">
           <button mat-button (click)="isHiddenPokemon()"> Pokemon </button>
         </div>
-        <div class="container_main_s2_nav_moves">
+        <div class="moves">
           <button mat-button (click)="isHiddenMoves()"> Moves </button>
         </div>
       </div>
 
-      <div class="container_main_s2_pokemon-type" [hidden]="this.isHiddenPk">
+      <div [hidden]="this.isHiddenPk">
         <app-pokemons-type [type] = "type"></app-pokemons-type>
       </div>
-      <div class="container_main_s2_pokemon-moves" [hidden]="this.isHiddenMov">
+      <div [hidden]="this.isHiddenMov">
         <app-pokemons-moves [type] = "type"></app-pokemons-moves>
       </div>
-    </div>
+    </section>
   </div>
   <app-footer></app-footer>
 </div>
