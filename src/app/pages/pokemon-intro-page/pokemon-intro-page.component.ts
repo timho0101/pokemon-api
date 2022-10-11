@@ -13,14 +13,11 @@ const MAX_POKEMON = 898;
 export class PokemonIntroPageComponent implements OnInit {
   public div = document.createElement('div')
   public div1 = document.activeElement
-
-
   public options: any[] = []
   public pkName: string = ''
 
   constructor(
     private readonly pokemonService: PokemonService,
-    private titleService: Title,
     private router: Router
     ) {
   }

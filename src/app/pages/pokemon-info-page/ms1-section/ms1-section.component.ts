@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TypesColorService } from 'src/app/services/typesColor.service';
-
 @Component({
   selector: 'app-ms1-section',
   templateUrl: './ms1-section.component.html',
@@ -21,7 +20,6 @@ export class Ms1SectionComponent implements OnInit {
   @Input() pkColor: string = '';
   @Input() pkShape: string = '';
 
-
   constructor(private colorsService: TypesColorService) { }
 
   ngOnInit(): void {
@@ -35,5 +33,4 @@ export class Ms1SectionComponent implements OnInit {
   public getBGColor(str:string):any {
     return this.colorsService.getBGColor(str)
   }
-
 }

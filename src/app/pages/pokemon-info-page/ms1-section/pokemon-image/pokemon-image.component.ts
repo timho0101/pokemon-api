@@ -1,6 +1,5 @@
 import { Component,Input, OnInit } from '@angular/core';
 import { TypesColorService } from 'src/app/services/typesColor.service';
-
 @Component({
   selector: 'app-pokemon-image',
   templateUrl: './pokemon-image.component.html',

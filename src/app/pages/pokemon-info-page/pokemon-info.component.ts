@@ -74,28 +74,24 @@ export class PokemonInfoComponent implements OnInit, AfterContentChecked {
           res['damage_relations']['double_damage_from'].map((damageRelationNames:any) => {
             var arr: any[] = []
             arr.push(damageRelationNames['name'])
-
             arr.forEach(t => {
               if(!this.doubleDamageFrom.includes(t)) {
                 this.doubleDamageFrom.push(t)
               }
             })
           })
-          res['damage_relations']['double_damage_to'].map((damageRelationNames:any) => {
-            // this.doubleDamageTo.push(damageRelationNames['name'])
 
+          res['damage_relations']['double_damage_to'].map((damageRelationNames:any) => {
             var arr: any[] = []
             arr.push(damageRelationNames['name'])
-
             arr.forEach(t => {
               if(!this.doubleDamageTo.includes(t)) {
                 this.doubleDamageTo.push(t)
               }
             })
           })
-          res['damage_relations']['half_damage_from'].map((damageRelationNames:any) => {
-            // this.halfDamageFrom.push(damageRelationNames['name'])
 
+          res['damage_relations']['half_damage_from'].map((damageRelationNames:any) => {
             var arr: any[] = []
             arr.push(damageRelationNames['name'])
 
@@ -105,8 +101,8 @@ export class PokemonInfoComponent implements OnInit, AfterContentChecked {
               }
             })
           })
+
           res['damage_relations']['half_damage_to'].map((damageRelationNames:any) => {
-            // this.halfDamageTo.push(damageRelationNames['name'])
             var arr: any[] = []
             arr.push(damageRelationNames['name'])
 
@@ -116,12 +112,10 @@ export class PokemonInfoComponent implements OnInit, AfterContentChecked {
               }
             })
           })
-          res['damage_relations']['no_damage_from'].map((damageRelationNames:any) => {
-            // this.noDamageFrom.push(damageRelationNames['name'])
 
+          res['damage_relations']['no_damage_from'].map((damageRelationNames:any) => {
             var arr: any[] = []
             arr.push(damageRelationNames['name'])
-
             arr.forEach(t => {
               if(!this.noDamageFrom.includes(t)) {
                 this.noDamageFrom.push(t)
@@ -129,11 +123,8 @@ export class PokemonInfoComponent implements OnInit, AfterContentChecked {
             })
           })
           res['damage_relations']['no_damage_to'].map((damageRelationNames:any) => {
-            // this.noDamageTo.push(damageRelationNames['name'])
-
             var arr: any[] = []
             arr.push(damageRelationNames['name'])
-
             arr.forEach(t => {
               if(!this.noDamageTo.includes(t)) {
                 this.noDamageTo.push(t)
@@ -161,6 +152,4 @@ export class PokemonInfoComponent implements OnInit, AfterContentChecked {
       })
     })
   }
-  
-
 }

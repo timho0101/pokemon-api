@@ -1,7 +1,6 @@
 import { Component,Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TypesColorService } from 'src/app/services/typesColor.service';
-
 @Component({
   selector: 'app-pokemon-infomation',
   templateUrl: './pokemon-infomation.component.html',
@@ -18,7 +17,6 @@ export class PokemonInfomationComponent implements OnInit {
   @Input() pkAbilities: string[] = [];
   @Input() pkColor: string = '';
   @Input() pkShape: string = '';
-
 
   constructor(
     private colorsService: TypesColorService,
