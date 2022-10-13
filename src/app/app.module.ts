@@ -39,7 +39,6 @@ import { MultipliersComponent } from './components/multipliers/multipliers.compo
 import { TypeInfoComponent } from './pages/pokemon-element-type-page/type-info/type-info.component';
 import { Ms1SectionComponent } from './pages/pokemon-info-page/ms1-section/ms1-section.component';
 import { Ms2SectionComponent } from './pages/pokemon-info-page/ms2-section/ms2-section.component';
-import { PokemonImageComponent } from './pages/pokemon-info-page/ms1-section/pokemon-image/pokemon-image.component';
 import { PokemonInfomationComponent } from './pages/pokemon-info-page/ms1-section/pokemon-infomation/pokemon-infomation.component';
 import { PokemonsMovesComponent } from './pages/pokemon-element-type-page/pokemons-moves/pokemons-moves.component';
 import { PokemonsTypeComponent } from './pages/pokemon-element-type-page/pokemons-type/pokemons-type.component';
@@ -53,7 +52,6 @@ import { LoaderComponent } from './components/loader/loader.component'
     MaxProgresssBarValue,
     Ms1SectionComponent,
     Ms2SectionComponent, 
-    PokemonImageComponent,
     PokemonInfomationComponent,
     MultipliersComponent,
     SearchPokemonComponent,

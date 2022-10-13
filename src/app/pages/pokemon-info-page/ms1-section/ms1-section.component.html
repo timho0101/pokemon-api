@@ -11,9 +11,10 @@
     [pkColor] = "pkColor"
     [pkShape] = "pkShape"
   ></app-pokemon-infomation>
-  <app-pokemon-image
-    [pkImg] = "pkImg"
-    [pkType] = "pkType"
-    [pkJaName] = "pkJaName"
-  ></app-pokemon-image>
+  <div class="pkSprites">
+    <div class="pkimg" >
+      <img class="size" src="{{this.pkImg}}" [ngStyle]="{'filter': getColorType(this.pkType[1]) || getColorType(this.pkType[0])}">
+    </div>
+    <span class="pkja">{{this.pkJaName}}</span>
+  </div>
 </div>
