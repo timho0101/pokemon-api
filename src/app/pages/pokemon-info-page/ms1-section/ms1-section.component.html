@@ -1,16 +1,46 @@
 <div class="container">
-  <app-pokemon-infomation
-    [pkType] = "pkType"
-    [pkName] = "pkName"
-    [pkTextEntry] = "pkTextEntry"
-    [pkId] = "pkId"
-    [pkWeight] = "pkWeight"
-    [pkHeight] = "pkHeight"
-    [pkAbilities_index] = "pkAbilities_index"
-    [pkAbilities] = "pkAbilities"
-    [pkColor] = "pkColor"
-    [pkShape] = "pkShape"
-  ></app-pokemon-infomation>
+  <div class="pkinfo">
+    <p class="pkname">{{this.pkName | pkname | titlecase}}</p>
+    <div class="pktype">
+      <a *ngFor="let pktpName of this.pkType" class="elements" [ngStyle]="{'background-color': getBGColor(pktpName)}" (click)="this.goToType(pktpName)">
+        <mat-icon class="icon" svgIcon={{pktpName}} aria-hidden="false"></mat-icon>
+        <span class="typename">{{pktpName | titlecase}}</span>
+      </a>
+    </div>
+    <p class="bio">
+      {{this.pkTextEntry}}
+    </p>
+    <table>
+      <tbody>
+        <tr>
+          <th>National №</th>
+          <td>#{{this.pkId}}</td>
+        </tr>
+        <tr>
+          <th>Weight</th>
+          <td>{{this.pkWeight}}</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>{{this.pkHeight}}</td>
+        </tr>
+        <tr>
+          <th>Abilities</th>
+          <td>
+            <span *ngFor="let index of this.pkAbilities_index">{{index+1}}. {{this.pkAbilities[index] | pkname | titlecase}}<br></span>
+          </td>
+        </tr>
+        <tr>
+          <th>Shape</th>
+          <td>{{this.pkShape | titlecase}}</td>
+        </tr>
+        <tr>
+          <th>Color</th>
+          <td>{{this.pkColor | titlecase}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   <div class="pkSprites">
     <div class="pkimg" >
       <img class="size" src="{{this.pkImg}}" [ngStyle]="{'filter': getColorType(this.pkType[1]) || getColorType(this.pkType[0])}">

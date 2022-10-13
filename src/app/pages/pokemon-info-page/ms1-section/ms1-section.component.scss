@@ -44,6 +44,103 @@ app-pokemon-infomation {
   }
 }
 
+.pkinfo {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 41.6667%;
+  height: 100%;
+  width: 100%;
+
+  .pkname {
+    font-size: 3.75rem;
+    line-height: 5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    width: max-content;
+  }
+
+  .pktype {
+    display: flex;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    margin: 0px 0px 0.5rem;
+    width: auto;
+    flex-basis: auto;
+
+    .elements {
+      display: flex;
+      flex-direction: row;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      width: auto;
+      color: rgb(255, 255, 255);
+      border-radius: 4px;
+      text-shadow: rgb(0 0 0) -0.5px -0.5px 0px, rgb(0 0 0) 0.5px -0.5px 0px, rgb(0 0 0) -0.5px 0.5px 0px, rgb(0 0 0) 0.5px 0.5px 0px;
+      margin: 0.5rem 0.5rem 0.5rem 0px;
+      padding: 0.5rem;
+
+      cursor: pointer;
+
+      .icon {
+        margin-right: .8rem;
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      .typename {
+        font-size: 1.2rem;
+        width: auto;
+        height: 24px;
+        margin-right: .3rem;
+
+        font-weight: 600;
+
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  .bio {
+    font-size: 1rem;
+    max-width: 35rem;
+    min-width: 35rem;
+  }
+
+  table {
+    font-size: .875rem;
+    line-height: 1.2rem;
+    word-break: keep-all;
+    margin: 0px 0px 1.5rem;
+    border-collapse: collapse;
+    width: 70%;
+
+    tbody tr th {
+      text-align: left;
+      width: 7rem;
+    }
+
+    tbody tr td {
+      padding: .375rem 1rem;
+      font-weight: bold;
+      font-size: 1rem;
+      white-space: pre-line;
+      height: 2.5rem;
+    }
+
+    tbody tr:not(:last-child){
+      width: 100%;
+      border-bottom: 1px solid rgb(236, 236, 236);
+    }
+  }
+}
+
+
 @keyframes img {
   0%{
     transform: translatey(-.322rem);

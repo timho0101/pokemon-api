@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { TypesColorService } from 'src/app/services/typesColor.service';
 @Component({
   selector: 'app-ms1-section',
@@ -20,7 +21,10 @@ export class Ms1SectionComponent implements OnInit {
   @Input() pkColor: string = '';
   @Input() pkShape: string = '';
 
-  constructor(private colorsService: TypesColorService) { }
+  constructor(
+    private colorsService: TypesColorService,
+    private router: Router
+    ) { }
 
   ngOnInit(): void {
 
@@ -32,5 +36,9 @@ export class Ms1SectionComponent implements OnInit {
 
   public getBGColor(str:string):any {
     return this.colorsService.getBGColor(str)
+  }
+
+  public goToType(str:string) {
+    this.router.navigate(['/type', str])
   }
 }
