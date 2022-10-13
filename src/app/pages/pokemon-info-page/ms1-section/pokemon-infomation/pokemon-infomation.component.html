@@ -1,15 +1,15 @@
 <div class="pkinfo">
-  <p class="pkinfo_pkname">{{this.pkName | pkname | titlecase}}</p>
-  <div class="pkinfo_pktype">
-    <a *ngFor="let pktpName of this.pkType" class="pkinfo_pktype_elements" [ngStyle]="{'background-color': getBGColor(pktpName)}" (click)="this.goToType(pktpName)">
-      <mat-icon class="pkinfo_pktype_elements_icon" svgIcon={{pktpName}} aria-hidden="false"></mat-icon>
-      <span class="pkinfo_pktype_elements_typename">{{pktpName | titlecase}}</span>
+  <p class="pkname">{{this.pkName | pkname | titlecase}}</p>
+  <div class="pktype">
+    <a *ngFor="let pktpName of this.pkType" class="elements" [ngStyle]="{'background-color': getBGColor(pktpName)}" (click)="this.goToType(pktpName)">
+      <mat-icon class="icon" svgIcon={{pktpName}} aria-hidden="false"></mat-icon>
+      <span class="typename">{{pktpName | titlecase}}</span>
     </a>
   </div>
-  <p class="pkinfo_bio">
+  <p class="bio">
     {{this.pkTextEntry}}
   </p>
-  <table class="pkinfo_styled-table">
+  <table>
     <tbody>
       <tr>
         <th>National №</th>
