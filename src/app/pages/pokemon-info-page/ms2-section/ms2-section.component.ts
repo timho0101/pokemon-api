@@ -21,6 +21,8 @@ export class Ms2SectionComponent implements OnInit {
   @Input() pkType: string[] = [];
   @Input() stats: number[] = [];
 
+  public baseStatsName: string[] = ['Hp', 'Attack', 'Defense', 'Special Attack', 'Special Defense', 'Speed']
+
   constructor(private colorsService: TypesColorService) { }
 
   ngOnInit(): void {}

@@ -35,7 +35,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SearchFilterPipe } from './pipes/search-filter.pipe';
 import { TypesComponent } from './pages/pokemon-element-type-page/types.component';
 import { PokemonIntroPageComponent } from './pages/pokemon-intro-page/pokemon-intro-page.component';
-import { BaseStatsComponent } from './pages/pokemon-info-page/ms2-section/base-stats/base-stats.component';
 import { MultipliersComponent } from './components/multipliers/multipliers.component';
 import { TypeInfoComponent } from './pages/pokemon-element-type-page/type-info/type-info.component';
 import { Ms1SectionComponent } from './pages/pokemon-info-page/ms1-section/ms1-section.component';
@@ -56,7 +55,6 @@ import { LoaderComponent } from './components/loader/loader.component'
     Ms2SectionComponent, 
     PokemonImageComponent,
     PokemonInfomationComponent,
-    BaseStatsComponent,
     MultipliersComponent,
     SearchPokemonComponent,
     HeaderComponent,
