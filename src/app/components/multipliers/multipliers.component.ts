@@ -1,5 +1,7 @@
 import { Component,Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { of, from } from 'rxjs';
+import { PokemonService } from 'src/app/services/pokemon.service';
 import { TypesColorService } from 'src/app/services/typesColor.service';
 
 interface DoubleDamageFrom {
@@ -34,7 +36,8 @@ export class MultipliersComponent implements OnInit {
 
   constructor(
     private colorsService: TypesColorService,
-    private router: Router
+    private router: Router,
+    private pokeService: PokemonService
   ) { }
 
   ngOnInit(): void {

@@ -39,16 +39,13 @@ export class PokemonInfoComponent implements OnInit, AfterContentChecked {
 
   public dmgMultiplierStats: any[] = [];
 
-  public pkRouteName = this.activatedRoute.snapshot.params['name']
-
-  public isLoading: Subject<boolean> = this.loaderService.isLoading;
+  public pkRouteName = this.activatedRoute.snapshot.params['name'];
 
   constructor(
     private pokemonService: PokemonService,
     private icons: IconsService,
     private activatedRoute: ActivatedRoute,
     private titleService: Title,
-    private loaderService: LoaderService,
     private changeDetector: ChangeDetectorRef
   ) { 
   }
@@ -57,7 +54,6 @@ export class PokemonInfoComponent implements OnInit, AfterContentChecked {
     this.icons.getIcons()
     this.fetchData(this.pkRouteName)
     this.titleService.setTitle(`PokeIndex - ${this.pokemonService.titleCase(this.pkRouteName)}`)
-
   }
 
   // fix: ExpressionChangedAfterItHasBeenCheckedError

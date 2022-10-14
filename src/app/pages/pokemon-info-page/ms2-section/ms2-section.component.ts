@@ -1,4 +1,4 @@
-import { Component,Input, OnInit, ViewChild } from '@angular/core';
+import { Component,Input, OnInit } from '@angular/core';
 
 import { TypesColorService } from 'src/app/services/typesColor.service';
 
@@ -20,7 +20,7 @@ export class Ms2SectionComponent implements OnInit {
   @Input() noDamageTo: string[] = [];
   @Input() pkType: string[] = [];
   @Input() stats: number[] = [];
-
+ 
   public baseStatsName: string[] = ['Hp', 'Attack', 'Defense', 'Special Attack', 'Special Defense', 'Speed']
 
   constructor(private colorsService: TypesColorService) { }
