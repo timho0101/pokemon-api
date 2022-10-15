@@ -4,7 +4,7 @@ import { Router, ActivatedRoute} from '@angular/router';
 import { IconsService } from '../../services/icons.service';
 import { Title } from '@angular/platform-browser';
 import { LoaderService } from 'src/app/services/loader.service';
-import { Subject } from 'rxjs';
+import { Subject, tap } from 'rxjs';
 
 interface DoubleDamageFrom {
   doubleDamageFrom: string

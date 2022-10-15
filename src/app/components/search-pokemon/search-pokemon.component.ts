@@ -28,11 +28,10 @@ export class SearchPokemonComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.options = this.pokemonService.searchKeyNames()
+    this.options = this.pokemonService.searchNames()
   }
 
   public filterPokemons(value:string) {
-    // this.checkValue(value)
     this.filterdOptions = this.options.filter(
       item => item.name.toLowerCase().includes(value.toLowerCase())
     ).slice(0,5);

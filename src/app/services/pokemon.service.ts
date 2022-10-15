@@ -3,8 +3,6 @@ import { from, Observable } from "rxjs";
 import { HttpBackend, HttpClient } from '@angular/common/http';
 
 const MAX_POKEMON = 898;
-const CURRENT_POKEMON = 50;
-
 @Injectable({
   providedIn: 'root'
 })
@@ -14,6 +12,8 @@ export class PokemonService {
   private pokemonTypesURL = 'https://pokeapi.co/api/v2/type/'
   
   private http: HttpClient;
+
+  private types = ['bug', 'dark', 'dragon', 'electric', 'fairy', 'fighting', 'fire', 'flying', 'ghost', 'grass', 'ground', 'ice', 'normal', 'poison', 'psychic', 'rock', 'steel', 'water']
 
   constructor(
     private handler: HttpBackend 
@@ -36,19 +36,32 @@ export class PokemonService {
   public getPokemonById(num:number): Observable<any> {
     return this.http.get(`${this.pokemonsURL + num}`)
   }
-  public searchKeyNames() {
+  public searchNames() {
     var tempArr: any[] = []
     for(var i = 1; i <= MAX_POKEMON; i++) {
       this.http.get(`${this.pokemonsURL + i}`).subscribe((res:any) => {
-        if(res['sprites']['front_default']){
+        if(res.sprites.front_default){
           tempArr.push({
-            name: res['name'],
-            id: res['id'],
-            img: res['sprites']['front_default']
+            name: res.name,
+            id: res.id,
+            img: res.sprites.front_default
           })
         }
       })
     }
+    return tempArr
+  }
+
+  public searchTypes() {
+    var tempArr: any[] = []
+    this.types.map((el:any) => {
+      this.http.get(`${this.pokemonTypesURL + el}`).subscribe((res: any) => {
+        tempArr.push({
+          name: res.name,
+          id: res.id
+        })
+      })
+    })
     return tempArr
   }
 
