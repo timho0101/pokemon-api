@@ -1,8 +1,8 @@
 <div class="container">
   <app-loader></app-loader>
   <app-header></app-header>
-  <div class="main">
-    <app-type-info [type] = "this.type"></app-type-info>
+  <main>
+    <app-type-info [type]="this.type"></app-type-info>
     <section>
       <div class="nav">
         <div class="pokemon">
@@ -20,7 +20,7 @@
         <app-pokemons-moves [type] = "type"></app-pokemons-moves>
       </div>
     </section>
-  </div>
+  </main>
   <app-footer></app-footer>
 </div>
 

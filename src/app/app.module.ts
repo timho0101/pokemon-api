@@ -18,7 +18,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
-import { PokemonInfoComponent } from './pages/pokemon-info-page/pokemon-info.component';
+import { PokemonInfoComponent } from './pages/p2/pokemon-info.component';
 import {MatIconRegistry} from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { PknamePipe } from './pipes/pkname.pipe';
@@ -33,15 +33,16 @@ import { SearchPokemonComponent } from './components/search-pokemon/search-pokem
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SearchFilterPipe } from './pipes/search-filter.pipe';
-import { TypesComponent } from './pages/pokemon-element-type-page/types.component';
-import { PokemonIntroPageComponent } from './pages/pokemon-intro-page/pokemon-intro-page.component';
+import { TypesComponent } from './pages/p3/types.component';
+import { PokemonIntroPageComponent } from './pages/p1/pokemon-intro-page.component';
 import { MultipliersComponent } from './components/multipliers/multipliers.component';
-import { TypeInfoComponent } from './pages/pokemon-element-type-page/type-info/type-info.component';
-import { Ms1SectionComponent } from './pages/pokemon-info-page/ms1-section/ms1-section.component';
-import { Ms2SectionComponent } from './pages/pokemon-info-page/ms2-section/ms2-section.component';
-import { PokemonsMovesComponent } from './pages/pokemon-element-type-page/pokemons-moves/pokemons-moves.component';
-import { PokemonsTypeComponent } from './pages/pokemon-element-type-page/pokemons-type/pokemons-type.component';
-import { LoaderComponent } from './components/loader/loader.component'
+import { TypeInfoComponent } from './pages/p3/type-info/type-info.component';
+import { Ms1SectionComponent } from './pages/p2/ms1-section/ms1-section.component';
+import { Ms2SectionComponent } from './pages/p2/ms2-section/ms2-section.component';
+import { PokemonsMovesComponent } from './pages/p3/pokemons-moves/pokemons-moves.component';
+import { PokemonsTypeComponent } from './pages/p3/pokemons-type/pokemons-type.component';
+import { LoaderComponent } from './components/loader/loader.component';
+import { Ms1Component } from './pages/p3/ms1-section/ms1/ms1.component'
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { LoaderComponent } from './components/loader/loader.component'
     PokemonsMovesComponent,
     PokemonsTypeComponent,
     PokemonIntroPageComponent,
-    LoaderComponent
+    LoaderComponent,
+    Ms1Component
   ],
   imports: [
     BrowserModule,

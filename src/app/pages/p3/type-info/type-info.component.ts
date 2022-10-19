@@ -7,7 +7,6 @@ interface DoubleDamageFrom {
   doubleDamageFrom: string
 }
 
-
 @Component({
   selector: 'app-type-info',
   templateUrl: './type-info.component.html',
