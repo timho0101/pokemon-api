@@ -34,7 +34,6 @@ import { SearchFilterPipe } from './pipes/search-filter.pipe';
 import { TypesComponent } from './pages/p3/types.component';
 import { MultipliersComponent } from './components/multipliers/multipliers.component';
 import { TypeInfoComponent } from './pages/p3/type-info/type-info.component';
-import { Ms1SectionComponent } from './pages/p2/ms1-section/ms1-section.component';
 import { Ms2SectionComponent } from './pages/p2/ms2-section/ms2-section.component';
 import { PokemonsMovesComponent } from './pages/p3/pokemons-moves/pokemons-moves.component';
 import { PokemonsTypeComponent } from './pages/p3/pokemons-type/pokemons-type.component';
@@ -42,14 +41,14 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { Ms1Component } from './pages/p3/ms1-section/ms1/ms1.component';
 import { P1Component } from './pages/p1/p1.component';
 import { P1Ms1Component } from './pages/p1/p1-ms1/p1-ms1.component';
-import { P2Component } from './pages/p2/p2.component'
+import { P2Component } from './pages/p2/p2.component';
+import { P2Ms1Component } from './pages/p2/p2-ms1/p2-ms1.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     PknamePipe,
     MaxProgresssBarValue,
-    Ms1SectionComponent,
     Ms2SectionComponent, 
     MultipliersComponent,
     SearchPokemonComponent,
@@ -64,7 +63,8 @@ import { P2Component } from './pages/p2/p2.component'
     Ms1Component,
     P1Component,
     P1Ms1Component,
-    P2Component
+    P2Component,
+    P2Ms1Component
   ],
   imports: [
     BrowserModule,

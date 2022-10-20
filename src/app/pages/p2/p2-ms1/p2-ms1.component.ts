@@ -1,13 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TypesColorService } from 'src/app/services/typesColor.service';
-@Component({
-  selector: 'app-ms1-section',
-  templateUrl: './ms1-section.component.html',
-  styleUrls: ['./ms1-section.component.scss']
-})
-export class Ms1SectionComponent implements OnInit {
 
+@Component({
+  selector: 'app-p2-ms1',
+  templateUrl: './p2-ms1.component.html',
+  styleUrls: ['./p2-ms1.component.scss']
+})
+export class P2Ms1Component implements OnInit {
   @Input() pkName: string = '';
   @Input() pkType: string[] = [];
   @Input() pkTextEntry: string = '';
@@ -24,10 +24,9 @@ export class Ms1SectionComponent implements OnInit {
   constructor(
     private colorsService: TypesColorService,
     private router: Router
-    ) { }
+  ) { }
 
   ngOnInit(): void {
-
   }
 
   public getColorType(str:string):any {
