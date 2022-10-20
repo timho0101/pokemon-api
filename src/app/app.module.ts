@@ -18,7 +18,6 @@ import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
-import { PokemonInfoComponent } from './pages/p2/pokemon-info.component';
 import {MatIconRegistry} from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { PknamePipe } from './pipes/pkname.pipe';
@@ -26,7 +25,6 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { MaxProgresssBarValue } from './pipes/maxProgressBarValue.pipe';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-
 
 // Components
 import { SearchPokemonComponent } from './components/search-pokemon/search-pokemon.component';
@@ -43,12 +41,12 @@ import { PokemonsTypeComponent } from './pages/p3/pokemons-type/pokemons-type.co
 import { LoaderComponent } from './components/loader/loader.component';
 import { Ms1Component } from './pages/p3/ms1-section/ms1/ms1.component';
 import { P1Component } from './pages/p1/p1.component';
-import { P1Ms1Component } from './pages/p1/p1-ms1/p1-ms1.component'
+import { P1Ms1Component } from './pages/p1/p1-ms1/p1-ms1.component';
+import { P2Component } from './pages/p2/p2.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    PokemonInfoComponent,
     PknamePipe,
     MaxProgresssBarValue,
     Ms1SectionComponent,
@@ -65,7 +63,8 @@ import { P1Ms1Component } from './pages/p1/p1-ms1/p1-ms1.component'
     LoaderComponent,
     Ms1Component,
     P1Component,
-    P1Ms1Component
+    P1Ms1Component,
+    P2Component
   ],
   imports: [
     BrowserModule,

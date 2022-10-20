@@ -9,13 +9,13 @@ import { Subject, tap } from 'rxjs';
 interface DoubleDamageFrom {
   doubleDamageFrom: string
 }
-@Component({
-  selector: 'app-pokemon-info',
-  templateUrl: './pokemon-info.component.html',
-  styleUrls: ['./pokemon-info.component.scss']
-})
 
-export class PokemonInfoComponent implements OnInit, AfterContentChecked {
+@Component({
+  selector: 'app-p2',
+  templateUrl: './p2.component.html',
+  styleUrls: ['./p2.component.scss']
+})
+export class P2Component implements OnInit {
   public pkImg: string = ''
   public pkName: string = '';
   public pkType: string[] = [];
@@ -47,9 +47,8 @@ export class PokemonInfoComponent implements OnInit, AfterContentChecked {
     private activatedRoute: ActivatedRoute,
     private titleService: Title,
     private changeDetector: ChangeDetectorRef
-  ) { 
-  }
-  
+  ) { }
+
   ngOnInit(): void {
     this.icons.getIcons()
     this.fetchData(this.pkRouteName)
