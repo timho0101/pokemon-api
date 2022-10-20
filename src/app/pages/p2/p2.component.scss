@@ -32,19 +32,13 @@ p2-ms1 {
   width: inherit;
 }
 
-app-header {
+header {
   flex: 1;
   margin: 2rem auto;
   width: inherit;
   max-width: 80rem;
 }
-app-main {
-  flex: 1;
-  margin: auto;
-  width: inherit;
-  max-width: 80rem;
-}
-app-footer {
+footer {
   flex: 1;
   margin-top: 2rem;
   background-color: black;

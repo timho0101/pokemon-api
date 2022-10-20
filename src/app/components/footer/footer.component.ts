@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { IconsService } from 'src/app/services/icons.service';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
