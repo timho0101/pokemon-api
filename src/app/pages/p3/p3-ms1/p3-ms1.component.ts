@@ -8,11 +8,11 @@ interface DoubleDamageFrom {
 }
 
 @Component({
-  selector: 'app-type-info',
-  templateUrl: './type-info.component.html',
-  styleUrls: ['./type-info.component.scss']
+  selector: 'app-p3-ms1',
+  templateUrl: './p3-ms1.component.html',
+  styleUrls: ['./p3-ms1.component.scss']
 })
-export class TypeInfoComponent implements OnInit {
+export class P3Ms1Component implements OnInit {
   @Input() type: string = '';
   @Input() parentData: number = 0;
 
@@ -84,5 +84,4 @@ export class TypeInfoComponent implements OnInit {
     this.parentData -=1
     this.localChildData = this.parentData + 1
   }
-  
 }
