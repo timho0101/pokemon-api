@@ -9,11 +9,12 @@ interface DoubleDamageFrom {
 }
 
 @Component({
-  selector: 'app-multipliers',
+  selector: 'multipliers',
   templateUrl: './multipliers.component.html',
   styleUrls: ['./multipliers.component.scss']
 })
 export class MultipliersComponent implements OnInit {
+  @Input() types: string = '';
   @Input() doubleDamageFrom: DoubleDamageFrom[] = [];
   @Input() doubleDamageTo: string[] = [];
   @Input() halfDamageFrom: string[] = [];

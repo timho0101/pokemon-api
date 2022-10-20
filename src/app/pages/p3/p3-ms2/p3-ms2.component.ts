@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class P3Ms2Component implements OnInit {
   public isHiddenPk: boolean = false
   public isHiddenMov: boolean = true
-  @Input() type: string = ''
+  @Input() types: string = ''
 
   constructor() { }
 

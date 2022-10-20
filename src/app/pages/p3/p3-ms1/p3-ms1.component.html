@@ -18,22 +18,23 @@
       </tbody>
     </table>
 
-    <app-multipliers
+    <multipliers
+    [types] = "types"
     [doubleDamageFrom] = "typeDoubleDmgFrom"
     [doubleDamageTo] = "typeDoubleDmgTo"
     [halfDamageFrom] = "typeHalfDmgFrom"
     [halfDamageTo] = "typeHalfDmgTo"
     [noDamageFrom] = "typeNoDmgFrom"
     [noDamageTo] = "typeNoDmgTo"
-  ></app-multipliers>
+  ></multipliers>
   </div>
   <div class="section2">
     <a>
       <mat-icon
-        svgIcon={{this.type}}
+        svgIcon={{this.types}}
         aria-hidden="false"
         class="icon"
-        style="--type-color: {{this.getTypeColor(this.type)}}">
+        style="--type-color: {{this.getTypeColor(this.types)}}">
       </mat-icon>
     </a>
     <span class="jp-name">{{this.typeJpName}}</span>

@@ -8,7 +8,7 @@ import { PokemonService } from 'src/app/services/pokemon.service';
   styleUrls: ['./pokemons-type.component.scss']
 })
 export class PokemonsTypeComponent implements OnInit {
-  @Input() type: string = '';
+  @Input() types: string = '';
 
   public pokemonTypes: any[] = []
 
@@ -18,7 +18,7 @@ export class PokemonsTypeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.pokemonService.pokemonTypes(this.type).subscribe(res => {
+    this.pokemonService.pokemonTypes(this.types).subscribe(res => {
       res.pokemon.map((props:any) => {
         this.pokemonService.pokemons(props.pokemon.name).subscribe(res => {
           if(res.sprites.other['official-artwork'].front_default) {

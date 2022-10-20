@@ -9,7 +9,7 @@ import { TypesColorService } from 'src/app/services/typesColor.service';
   styleUrls: ['./pokemons-moves.component.scss']
 })
 export class PokemonsMovesComponent implements OnInit {
-  @Input() type: string = '';
+  @Input() types: string = '';
   
   public pkImg: string = ''; // res.sprites.front_default
   public pkId: number = 0; // res.id
@@ -29,7 +29,7 @@ export class PokemonsMovesComponent implements OnInit {
   ngOnInit(): void {
     this.icons.getIcons()
 
-    this.pokemonService.pokemonTypes(this.type).subscribe(resx => {
+    this.pokemonService.pokemonTypes(this.types).subscribe(resx => {
       resx.moves.map((values:any) => {
         this.pokemonService.URL(values.url).subscribe(res => {
           this.pkMoves.push({

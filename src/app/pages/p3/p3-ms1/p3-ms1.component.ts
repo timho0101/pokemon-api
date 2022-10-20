@@ -13,13 +13,8 @@ interface DoubleDamageFrom {
   styleUrls: ['./p3-ms1.component.scss']
 })
 export class P3Ms1Component implements OnInit {
-  @Input() type: string = '';
+  @Input() types: string = '';
   @Input() parentData: number = 0;
-
-  public localChildData: number = 0
-  public firstValue: boolean = false
-  public currValue: number = 0
-  public preValue: number = 0
 
   public typeId: number = 0;
   public typeName: string = '';
@@ -43,7 +38,7 @@ export class P3Ms1Component implements OnInit {
   ngOnInit(): void {
     this.icons.getIcons()
 
-    this.pokemonService.pokemonTypes(this.type).subscribe(res => {
+    this.pokemonService.pokemonTypes(this.types).subscribe(res => {
       res.damage_relations.double_damage_from.map((params:any) => {
         this.typeDoubleDmgFrom.push(params.name)
       })
@@ -78,10 +73,5 @@ export class P3Ms1Component implements OnInit {
 
   public getTypeColor(str:string) {
     return this.typeColorService.getBGColor(str)
-  }
-
-  public changeFromChild() {
-    this.parentData -=1
-    this.localChildData = this.parentData + 1
   }
 }
