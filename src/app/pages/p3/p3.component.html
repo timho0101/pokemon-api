@@ -3,23 +3,7 @@
   <app-header></app-header>
   <main>
     <app-p3-ms1 [type]="type"></app-p3-ms1>
-    <section>
-      <div class="nav">
-        <div class="pokemon">
-          <button mat-button (click)="isHiddenPokemon()"> Pokemon </button>
-        </div>
-        <div class="moves">
-          <button mat-button (click)="isHiddenMoves()"> Moves </button>
-        </div>
-      </div>
-
-      <div [hidden]="this.isHiddenPk">
-        <app-pokemons-type [type] = "type"></app-pokemons-type>
-      </div>
-      <div [hidden]="this.isHiddenMov">
-        <app-pokemons-moves [type] = "type"></app-pokemons-moves>
-      </div>
-    </section>
+    <app-p3-ms2 [type]="type"></app-p3-ms2>
   </main>
   <app-footer></app-footer>
 </div>

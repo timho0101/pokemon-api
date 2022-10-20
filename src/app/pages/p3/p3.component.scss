@@ -14,56 +14,6 @@
     max-width: 80rem;
     margin: 0 auto;
     width: inherit;
-
-    section {
-      display: flex;
-      flex-flow: column nowrap;
-
-      .nav {
-        display: flex;
-        flex-flow: row wrap;
-        width: inherit;
-        margin-bottom: 2rem;
-
-        .pokemon{
-          display: flex;
-          justify-content: center;
-          flex: 1 1 50%;
-
-          button{
-            height: 2.8rem;
-            background-color: black;
-            color: white;
-            border: 2px solid black;
-          }
-
-          button:hover, button:focus {
-            background-color: white;
-            color: black;
-            filter: drop-shadow(0 0 2px black);
-          }
-        }
-        
-        .moves{
-          display: flex;
-          justify-content: center;
-          flex: 1 1 50%;
-
-          button{
-            height: 2.8rem;
-            background-color: black;
-            color: white;
-            border: 2px solid black;
-          }
-
-          button:hover, button:focus{
-            background-color: white;
-            color: black;
-            filter: drop-shadow(0 0 2px black);
-          }
-        }
-      }
-    }
   }
 }
 

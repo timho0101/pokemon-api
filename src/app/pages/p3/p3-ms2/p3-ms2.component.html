@@ -1,1 +1,17 @@
-<p>p3-ms2 works!</p>
+<div class="container">
+  <div class="nav">
+    <div class="pokemon">
+      <button mat-button (click)="isHiddenPokemon()"> Pokemon </button>
+    </div>
+    <div class="moves">
+      <button mat-button (click)="isHiddenMoves()"> Moves </button>
+    </div>
+  </div>
+
+  <div [hidden]="this.isHiddenPk">
+    <app-pokemons-type [type] = "type"></app-pokemons-type>
+  </div>
+  <div [hidden]="this.isHiddenMov">
+    <app-pokemons-moves [type] = "type"></app-pokemons-moves>
+  </div>
+</div>
