@@ -1,14 +1,14 @@
-import { Component, OnInit,ChangeDetectorRef, AfterContentChecked } from '@angular/core';
+import { AfterContentChecked, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { ActivatedRoute, Router } from '@angular/router';
-import { PokemonService } from '../../services/pokemon.service';
+import { ActivatedRoute } from '@angular/router';
+import { PokemonService } from 'src/app/services/pokemon.service';
 
 @Component({
-  selector: 'app-types',
-  templateUrl: './types.component.html',
-  styleUrls: ['./types.component.scss']
+  selector: 'app-p3',
+  templateUrl: './p3.component.html',
+  styleUrls: ['./p3.component.scss']
 })
-export class TypesComponent implements OnInit, AfterContentChecked {
+export class P3Component implements OnInit, AfterContentChecked {
   public data: number = 0
   public type: string = '';
   public isHiddenPk: boolean = false
@@ -42,5 +42,4 @@ export class TypesComponent implements OnInit, AfterContentChecked {
     this.isHiddenMov = false
     this.isHiddenPk = true
   }
-
 }
