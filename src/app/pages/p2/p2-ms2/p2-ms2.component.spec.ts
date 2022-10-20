@@ -1,20 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Ms2SectionComponent } from './ms2-section.component';
+import { P2Ms2Component } from './p2-ms2.component';
 
-describe('Ms2SectionComponent', () => {
-  let component: Ms2SectionComponent;
-  let fixture: ComponentFixture<Ms2SectionComponent>;
+describe('P2Ms2Component', () => {
+  let component: P2Ms2Component;
+  let fixture: ComponentFixture<P2Ms2Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Ms2SectionComponent ]
+      declarations: [ P2Ms2Component ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(Ms2SectionComponent);
+    fixture = TestBed.createComponent(P2Ms2Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -6,12 +6,13 @@ interface DoubleDamageFrom {
   doubleDamageFrom: string
 }
 
+
 @Component({
-  selector: 'app-ms2-section',
-  templateUrl: './ms2-section.component.html',
-  styleUrls: ['./ms2-section.component.scss']
+  selector: 'app-p2-ms2',
+  templateUrl: './p2-ms2.component.html',
+  styleUrls: ['./p2-ms2.component.scss']
 })
-export class Ms2SectionComponent implements OnInit {
+export class P2Ms2Component implements OnInit {
   @Input() doubleDamageFrom: DoubleDamageFrom[] = [];
   @Input() doubleDamageTo: string[] = [];
   @Input() halfDamageFrom: string[] = [];
@@ -34,5 +35,4 @@ export class Ms2SectionComponent implements OnInit {
   public getBGColor(str:string):any {
     return this.colorsService.getBGColor(str)
   }
-
 }
