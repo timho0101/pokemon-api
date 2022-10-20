@@ -9,14 +9,7 @@ import { PokemonService } from 'src/app/services/pokemon.service';
   styleUrls: ['./p3.component.scss']
 })
 export class P3Component implements OnInit, AfterContentChecked {
-  public data: number = 0
-  public type: string = '';
-  public isHiddenPk: boolean = false
-  public isHiddenMov: boolean = true
-  public pkName: string = '';
-  public pkId: number = 0;
-  public pkImg: string = '';
-  public routeTypeName = this.activatedRoute.snapshot.params['type']
+  public type: string = this.activatedRoute.snapshot.params['type'];
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -26,20 +19,10 @@ export class P3Component implements OnInit, AfterContentChecked {
   ) { }
 
   ngOnInit(): void {
-    this.type = this.routeTypeName
-    this.titleService.setTitle(`PokeIndex - ${this.pokemonService.titleCase(this.routeTypeName)}`)
+    this.titleService.setTitle(`PokeIndex - ${this.pokemonService.titleCase(this.type)}`)
   }
 
   ngAfterContentChecked(): void {
     this.changeDetector.detectChanges();
-  }
-
-  public isHiddenPokemon() {
-    this.isHiddenPk = false
-    this.isHiddenMov = true
-  }
-  public isHiddenMoves() {
-    this.isHiddenMov = false
-    this.isHiddenPk = true
   }
 }

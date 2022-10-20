@@ -4,7 +4,7 @@ import { PokemonService } from 'src/app/services/pokemon.service';
 import { TypesColorService } from 'src/app/services/typesColor.service';
 
 @Component({
-  selector: 'app-pokemons-moves',
+  selector: 'pokemons-moves',
   templateUrl: './pokemons-moves.component.html',
   styleUrls: ['./pokemons-moves.component.scss']
 })

@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-p3-ms2',
+  selector: 'p3-ms2',
   templateUrl: './p3-ms2.component.html',
   styleUrls: ['./p3-ms2.component.scss']
 })

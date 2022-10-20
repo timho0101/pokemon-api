@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { PokemonService } from 'src/app/services/pokemon.service';
 
 @Component({
-  selector: 'app-pokemons-type',
+  selector: 'pokemons-type',
   templateUrl: './pokemons-type.component.html',
   styleUrls: ['./pokemons-type.component.scss']
 })

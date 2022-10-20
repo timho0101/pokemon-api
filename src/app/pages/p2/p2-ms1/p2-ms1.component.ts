@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { TypesColorService } from 'src/app/services/typesColor.service';
 
 @Component({
-  selector: 'app-p2-ms1',
+  selector: 'p2-ms1',
   templateUrl: './p2-ms1.component.html',
   styleUrls: ['./p2-ms1.component.scss']
 })
