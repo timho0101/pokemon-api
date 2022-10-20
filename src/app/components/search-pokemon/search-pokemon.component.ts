@@ -9,7 +9,7 @@ interface Options {
 }
 
 @Component({
-  selector: 'app-search-pokemon',
+  selector: 'search-pokemon',
   templateUrl: './search-pokemon.component.html',
   styleUrls: ['./search-pokemon.component.scss']
 })

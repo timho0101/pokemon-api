@@ -1,20 +1,16 @@
 import { Component,Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { of, from } from 'rxjs';
 import { PokemonService } from 'src/app/services/pokemon.service';
 import { TypesColorService } from 'src/app/services/typesColor.service';
-
 interface DoubleDamageFrom {
   doubleDamageFrom: string
 }
-
 @Component({
   selector: 'multipliers',
   templateUrl: './multipliers.component.html',
   styleUrls: ['./multipliers.component.scss']
 })
 export class MultipliersComponent implements OnInit {
-  @Input() types: string = '';
   @Input() doubleDamageFrom: DoubleDamageFrom[] = [];
   @Input() doubleDamageTo: string[] = [];
   @Input() halfDamageFrom: string[] = [];
