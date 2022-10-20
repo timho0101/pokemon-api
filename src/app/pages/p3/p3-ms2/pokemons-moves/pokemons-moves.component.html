@@ -1,13 +1,7 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Category</th>
-      <th>Power</th>
-      <th>PP</th>
-      <th>Accuracy</th>
-      <th>Generation</th>
+      <th *ngFor="let th of this.thead; let i=index">{{th}}</th>
     </tr>
   </thead>
   <tbody>

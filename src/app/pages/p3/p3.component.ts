@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { PokemonService } from 'src/app/services/pokemon.service';
 
 @Component({
-  selector: 'app-p3',
+  selector: 'p3',
   templateUrl: './p3.component.html',
   styleUrls: ['./p3.component.scss']
 })

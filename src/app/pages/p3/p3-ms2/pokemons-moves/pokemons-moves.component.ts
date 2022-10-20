@@ -16,7 +16,9 @@ export class PokemonsMovesComponent implements OnInit {
   public pkName: string = ''; // res.name
 
   // pk-moves
-  public pkMoves: any[] = []
+  public pkMoves: any[] = [];
+
+  public thead = ['Name', 'Type', 'Category', 'Power', 'PP', 'Accuracy', 'Generation'];
 
   constructor(
     private pokemonService: PokemonService,
@@ -30,7 +32,6 @@ export class PokemonsMovesComponent implements OnInit {
     this.pokemonService.pokemonTypes(this.type).subscribe(resx => {
       resx.moves.map((values:any) => {
         this.pokemonService.URL(values.url).subscribe(res => {
-          // this.pkMoves.
           this.pkMoves.push({
             mName: res.name,
             mType: res.type.name,

@@ -11,7 +11,7 @@ interface DoubleDamageFrom {
 }
 
 @Component({
-  selector: 'app-p2',
+  selector: 'p2',
   templateUrl: './p2.component.html',
   styleUrls: ['./p2.component.scss']
 })
