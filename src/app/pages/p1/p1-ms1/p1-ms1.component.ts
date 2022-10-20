@@ -5,7 +5,7 @@ import { PokemonService } from 'src/app/services/pokemon.service';
 const MAX_POKEMON = 898;
 
 @Component({
-  selector: 'app-p1-ms1',
+  selector: 'p1-ms1',
   templateUrl: './p1-ms1.component.html',
   styleUrls: ['./p1-ms1.component.scss']
 })
