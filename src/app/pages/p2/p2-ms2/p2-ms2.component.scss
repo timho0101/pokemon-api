@@ -6,11 +6,7 @@
   gap: 2rem;
 }
 
-// app-base-stats {
-//   width: 60%;
-// }
-
-app-multipliers {
+multipliers {
   width: 40%;
 }
 
@@ -24,17 +20,17 @@ app-multipliers {
   display: flex;
   flex-flow: column nowrap;
 
-  &_title{
+  .title{
     font-size: 2.5rem;
     font-weight: bold;
     line-height: 5rem;
     margin-bottom: 1rem;
   }
 
-  &_styled-table{
+  .styled-table{
     border-collapse: collapse;
     
-    &_progress-bar-container{
+    .progress-bar-container{
       width: 70%;
       mat-progress-bar {
         height: .625rem;

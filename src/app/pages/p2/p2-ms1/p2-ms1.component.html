@@ -27,7 +27,7 @@
         <tr>
           <th>Abilities</th>
           <td>
-            <span *ngFor="let index of this.pkAbilities_index">{{index+1}}. {{this.pkAbilities[index] | pkname | titlecase}}<br></span>
+            <span *ngFor="let i of this.pkAbilities_index">{{i+1}}. {{this.pkAbilities[i] | pkname | titlecase}}<br></span>
           </td>
         </tr>
         <tr>

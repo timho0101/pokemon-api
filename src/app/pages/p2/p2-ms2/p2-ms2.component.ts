@@ -1,5 +1,4 @@
 import { Component,Input, OnInit } from '@angular/core';
-
 import { TypesColorService } from 'src/app/services/typesColor.service';
 
 interface DoubleDamageFrom {

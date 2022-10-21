@@ -1,12 +1,12 @@
 <div class="container">
   <div class="base-stats">
-    <h2 class="base-stats_title">Base Stats</h2>
-    <table class="base-stats_styled-table">
+    <h2 class="title">Base Stats</h2>
+    <table class="styled-table">
       <tbody style="--background-color: {{this.getBGColor(this.pkType[0] || this.getBGColor(this.pkType[1]))}}" >
         <tr *ngFor="let stat of this.stats; let i = index">
           <th>{{baseStatsName[i]}}</th>
           <td>{{stat}}</td>
-          <td class="base-stats_styled-table_progress-bar-container">
+          <td class="progress-bar-container">
             <mat-progress-bar mode="determinate" value="{{stat | maxProgressBarValue}}"></mat-progress-bar>
           </td>
         </tr>

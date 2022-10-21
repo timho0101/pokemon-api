@@ -1,7 +1,6 @@
 <div class="container">
   <label for="autocomplete">Search Pokemon</label>
   <input type="text" placeholder="Search Pokemon" [(ngModel)]="searchTerm" (input) = "filterPokemons(searchTerm)">
-
   <div class="dropdown">
     <div class="display" *ngFor="let options of filterdOptions" (click)="this.searchPokemon(options.name)">
       <div class="imgName">

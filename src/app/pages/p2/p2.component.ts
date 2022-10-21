@@ -1,15 +1,11 @@
-import { AfterContentChecked, ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { PokemonService } from '../../services/pokemon.service';
-import { Router, ActivatedRoute} from '@angular/router';
+import { ActivatedRoute} from '@angular/router';
 import { IconsService } from '../../services/icons.service';
 import { Title } from '@angular/platform-browser';
-import { LoaderService } from 'src/app/services/loader.service';
-import { Subject, tap } from 'rxjs';
-
 interface DoubleDamageFrom {
   doubleDamageFrom: string
 }
-
 @Component({
   selector: 'p2',
   templateUrl: './p2.component.html',
