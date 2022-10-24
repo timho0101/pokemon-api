@@ -1,6 +1,14 @@
 .container{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(100vh, auto);
+
+  margin: 0 auto;
+  max-width: 80rem;
+}
+
+p1-ms1{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
